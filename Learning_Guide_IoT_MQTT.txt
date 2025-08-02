@@ -1,0 +1,56 @@
+# MQTT vs HTTP Performance – Learning Guide
+
+## 📌 Overview
+This project compares the **latency** and **performance** of MQTT and HTTP for IoT communication.  
+It helps you understand when MQTT is better than HTTP for IoT applications.
+
+---
+
+## 1️⃣ What is MQTT vs HTTP?
+- **HTTP**: A request-response protocol. Each message requires a full connection.
+- **MQTT**: A lightweight publish/subscribe protocol that keeps a persistent connection.
+
+---
+
+## 2️⃣ Project Goal
+- Measure **round-trip latency** for both MQTT and HTTP.
+- Visualize the results in a graph using Matplotlib.
+- Understand the trade-offs between MQTT and HTTP.
+
+---
+
+## 3️⃣ Key Learnings
+✅ How to publish messages with MQTT.  
+✅ How to send data via HTTP POST requests.  
+✅ How to measure latency using `time.time()`.  
+✅ How to visualize results using Matplotlib.
+
+---
+
+## 4️⃣ Why MQTT is Usually Faster
+- MQTT keeps a persistent connection and uses small headers.
+- HTTP creates a new connection for every request unless using HTTP/2.
+
+---
+
+## 5️⃣ Features You Learn from This Project
+- Real-time latency measurement for both protocols.
+- Plotting results with Matplotlib.
+- Using Flask as a lightweight HTTP server.
+
+---
+
+## 6️⃣ Recommended Learning Steps
+1. Learn how to use `paho-mqtt` to publish and subscribe to topics.
+2. Understand basic HTTP requests using the `requests` library.
+3. Learn how to measure time in Python using `time.time()`.
+4. Install and run a local Mosquitto broker for MQTT.
+5. Modify the project to test more messages or compare different QoS levels.
+
+---
+
+## 📚 Resources
+- MQTT Essentials: https://www.hivemq.com/mqtt-essentials/
+- Paho MQTT Python Docs: https://pypi.org/project/paho-mqtt/
+- Flask Docs: https://flask.palletsprojects.com/
+
